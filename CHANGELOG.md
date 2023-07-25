@@ -115,7 +115,7 @@
 ### **v0.2.22**
 * **archlinx64 Image Version**: 0.2.22
 * **Artemis Version**: v3.0.0
-* **Change**: Artemis now uses the [rlees85 fork](https://github.com/rlees85/artemis). - [Rich Lees]
+* **Change**: Artemis now uses the **rlees85** fork. - [Rich Lees]
 
 <!---------------------------------------------------------------------------->
 

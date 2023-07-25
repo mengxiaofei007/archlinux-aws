@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #
-# A script that takes a VMDK image and writes it out to an intermediate file
+# A script that takes a disk image and writes it out to an intermediate file
 # or volume. It then sparsely copies the intermediate to the final volume.
 #
 # The final snapshot can then be used as a cost effective EBS snapshot forming
@@ -20,7 +20,7 @@ echo "------------------------------------------------------------------------"
 echo "- EBS Surrogate Volume Preparation Script                              -"
 echo "------------------------------------------------------------------------"
 
-PS_S3_VMDK_URL=""
+PS_S3_URL=""
 PS_INTERMEDIATE=""
 PS_VOLUME_FINAL=""
 
@@ -39,13 +39,13 @@ while getopts "i:f:s:" PS_OPT; do
 done
 
 
-if [ -z "${PS_INTERMEDIATE}" ]; then echo "FAIL: No intermediate specified (-i)!"                    ; exit 1; fi
-if [ -z "${PS_VOLUME_FINAL}" ]; then echo "FAIL: No final volume specified (-f)!"                    ; exit 1; fi
-if [ -z "${PS_S3_VMDK_URL}"  ]; then echo "FAIL: No S3 URL to download VMDK artefact specified (-s)!"; exit 1; fi
+if [ -z "${PS_INTERMEDIATE}" ]; then echo "FAIL: No intermediate specified (-i)!"                 ; exit 1; fi
+if [ -z "${PS_VOLUME_FINAL}" ]; then echo "FAIL: No final volume specified (-f)!"                 ; exit 1; fi
+if [ -z "${PS_S3_URL}"       ]; then echo "FAIL: No S3 URL to download disk image specified (-s)!"; exit 1; fi
 
+echo "S3 URL      : ${PS_S3_URL}"
 echo "Intermediate: ${PS_INTERMEDIATE}"
 echo "Final Volume: ${PS_VOLUME_FINAL}"
-echo "S3 URL      : ${PS_S3_VMDK_URL}"
 echo ""
 
 ###############################################################################
@@ -64,14 +64,14 @@ echo "------------------------------------------------------------------------"
 echo "- Downloading from S3                                                  -"
 echo "------------------------------------------------------------------------"
 
-PS_LOCAL_FILE="./$(basename "${PS_S3_VMDK_URL}")"
+PS_LOCAL_FILE="./$(basename "${PS_S3_URL}")"
 
-aws s3 cp --no-progress "${PS_S3_VMDK_URL}" "${PS_LOCAL_FILE}"
+aws s3 cp --no-progress "${PS_S3_URL}" "${PS_LOCAL_FILE}"
 
 ###############################################################################
 
 echo "------------------------------------------------------------------------"
-echo "- Extracting VMDK to Intermediate                                      -"
+echo "- Extracting Image to Intermediate                                     -"
 echo "------------------------------------------------------------------------"
 
 sudo qemu-img convert "${PS_LOCAL_FILE}" -O raw ${PS_INTERMEDIATE}
