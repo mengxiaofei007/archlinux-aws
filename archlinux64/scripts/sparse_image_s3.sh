@@ -33,7 +33,7 @@ while getopts "i:f:s:" PS_OPT; do
       PS_VOLUME_FINAL="${OPTARG}"
       ;;
     s)
-      PS_S3_VMDK_URL="${OPTARG}"
+      PS_S3_URL="${OPTARG}"
       ;;
   esac
 done
