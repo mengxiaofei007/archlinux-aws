@@ -1,5 +1,13 @@
 <!----------------------------------------------------------------------------->
 
+### Unreleased
+* **archlinx64 Image Version**: TBC
+* **Add**: Add `prometheus-node-exporter` package. - [Rich Lees]
+* **Add**: Enabled the `prometheus-node-exporter.service` service. - [Rich Lees]
+* **Change**: Disable the following Prometheus Node Exporter collectors: `arp`, `bcache`, `dmi`, `nfsd`, `selinux`, `sockstat`, `softnet`, `stat`, `tapestats`, `xfs` and `zfs`. - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **v2.0.6**
 * **archlinx64 Image Version**: 2.0.6
 * **Change**: Use `aws-cli-v2-bits` package instead since `aws-cli-v2` has been demoted to the AUR. - [Rich Lees]
