@@ -5,7 +5,7 @@
 * **Add**: Add `prometheus-node-exporter` package. - [Rich Lees]
 * **Add**: Enabled the `prometheus-node-exporter.service` service. - [Rich Lees]
 * **Change**: Disable all Prometheus Node Exporter collectors by default. - [Rich Lees]
-* **Change**: Enable the following Prometheus Node Exporter collectors: `btrfs`, `boottime`, `cpu`, `cpufreq`, `diskstats`, `edac`, `entropy`, `filesystem`, `hwmon`, `loadavg`, 'mdadm', 'meminfo', 'netclass', 'netdev', 'netstat', 'nfs', 'nvme', 'pressure', 'thermal', 'thermal_zone' and 'udp_queues'. - [Rich Lees]
+* **Change**: Enable the following Prometheus Node Exporter collectors: `btrfs`, `cpu`, `cpufreq`, `diskstats`, `edac`, `entropy`, `filesystem`, `hwmon`, `loadavg`, 'mdadm', 'meminfo', 'netclass', 'netdev', 'netstat', 'nfs', 'nvme', 'pressure', 'stat', 'thermal_zone' and 'udp_queues'. - [Rich Lees]
 
 <!----------------------------------------------------------------------------->
 
