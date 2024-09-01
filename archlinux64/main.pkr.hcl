@@ -7,7 +7,7 @@ variable "bucket" {}
 
 variable "name"           { default = "archlinux64" }
 variable "kernel"         { default = "linux"       }
-variable "release"        { default = "2.0.8"       }
+variable "release"        { default = "2.0.9"       }
 variable "architecture"   { default = "x86_64"      }
 variable "virtualisation" { default = "hvm"         }
 
