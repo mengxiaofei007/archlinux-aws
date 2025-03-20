@@ -3,18 +3,16 @@
 include:
   - project: 'bitservices/gitlab/packer'
     ref: latest
-    file: '/templates/aws.yml'
-
-###############################################################################
-
-variables:
-  PACKER_NAME: archlinux64
+    file: '/templates/aws/core.yml'
+    inputs:
+      name: archlinux64
+      architecture: arm64
 
 ###############################################################################
 
 test:
   variables:
-    PKR_VAR_bucket: bucket
+    PKR_VAR_bucket: test-s3-bucket
 
 ###############################################################################
 
