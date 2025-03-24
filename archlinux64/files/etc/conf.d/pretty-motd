@@ -1,0 +1,52 @@
+#
+# /etc/conf.d/pretty-motd
+#
+
+################################################################################
+
+# Set the base directory where the pretty-motd templates are.
+
+# Default: "/usr/share/pretty-motd/templates"
+# PRETTY_MOTD_TEMPLATE_BASE=
+
+################################################################################
+
+# Set the name of the template file to use.
+
+# Default: "plain.template"
+PRETTY_MOTD_TEMPLATE_FILE="archlinux.template"
+
+################################################################################
+
+# The temporary message of the day file to write. This file is written and then
+# compared to the current message of the day file. If they are different only
+# then the message of the day file is overwritten. This file should be on a
+# TMPFS in RAM to avoid unnessacery disk writes.
+
+# Default: "/tmp/pretty-motd.tmp"
+# PRETTY_MOTD_TEMP_FILE=
+
+################################################################################
+
+# The output message of the day file to write.
+
+# Default: "/etc/motd"
+# PRETTY_MOTD_OUTPUT_FILE=
+
+################################################################################
+
+# The file where os information can be found, normally always best to leave as
+# the default value.
+
+# Default: "/etc/os-release"
+# PRETTY_MOTD_OS_RELEASE_FILE=
+
+################################################################################
+
+# The columns to output from the 'lsblk' command. This value is passed
+# directly into the '--output' parameter.
+
+# Default: "NAME,HCTL,TYPE,VENDOR,MODEL,REV,TRAN,SIZE"
+# PRETTY_MOTD_STORAGE_COLUMNS=
+
+################################################################################
