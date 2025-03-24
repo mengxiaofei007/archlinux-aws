@@ -163,6 +163,7 @@ key:
     * Remove `udev` hook
     * Remove `autodetect` hook
     * Remove `microcode` hook
+    * Remove `kms` hook
     * Remove `keymap` hook
     * Remove `consolefont` hook
 * **Device Manager**

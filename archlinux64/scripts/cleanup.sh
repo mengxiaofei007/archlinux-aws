@@ -83,6 +83,7 @@ echo "-------------------------------------------------------------------------"
 echo "- Cleanup generic files...                                              -"
 echo "-------------------------------------------------------------------------"
 
+rm -fv "/mnt/boot/initramfs-linux-fallback.img"
 rm -fv "/mnt/etc/machine-id"
 
 find "/mnt/var/cache"           -mindepth 1 -maxdepth 1 -exec rm -rfv "{}" \;

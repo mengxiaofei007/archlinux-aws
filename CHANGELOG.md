@@ -34,6 +34,10 @@
 * **Remove**: Remove systemd network overrides (device naming and MAC address policy) that no longer seem to do anything. - [Rich Lees]
 * **Remove**: Remove the `grub` package. - [Rich Lees]
 * **Remove**: Remove the `vim` package. - [Rich Lees]
+* **Remove**: Remove the 'kms' hook in `mkinitcpio.conf` to dramatically lower initial ramdisk size (cannot boot on nano instances otherwise). - [Rich Lees]
+* **Remove**: Disable `systemd-networkd.socket` as it should never have been enabled anyway. - [Rich Lees]
+* **Remove**: Disable `systemd-networkd.service` as it should never have been enabled anyway. - [Rich Lees]
+* **Remove**: Disable `systemd-resolved.service` as it should never have been enabled anyway. - [Rich Lees]
 
 **NOTE**: The build system is completely different - images are now created by
 booting an Alpine Linux EC2 instance and installing the Archlinux installation
