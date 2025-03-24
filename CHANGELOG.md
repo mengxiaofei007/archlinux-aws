@@ -35,7 +35,7 @@
 * **Remove**: Remove the `grub` package. - [Rich Lees]
 * **Remove**: Remove the `vim` package. - [Rich Lees]
 
-* **NOTE**: The build system is completely different - images are now created by
+**NOTE**: The build system is completely different - images are now created by
 booting an Alpine Linux EC2 instance and installing the Archlinux installation
 tools. From there, a completely fresh installation of Archlinux is set up on an
 attached volume. The attached volume is later captured to form the final image.
@@ -85,7 +85,7 @@ For initial builder configuration, please see [README.md](README.md).
 * **Remove**: Remove **growrootpart** hook from `mkinitcpio.conf`. - [Rich Lees]
 * **Remove**: Remove **migrator** `cloud-init` module. - [Rich Lees]
 
-* **IMPORTANT**: For Vagrant box, please use: `bitservices/archlinux64` instead.
+**IMPORTANT**: For Vagrant box, please use: `bitservices/archlinux64` instead.
 
 <!----------------------------------------------------------------------------->
 
@@ -119,7 +119,7 @@ For initial builder configuration, please see [README.md](README.md).
 * **Archlinux Boot ISO Used**: archlinux-2024.04.01-dual.iso
 * **Change**: Management of **makepkg** settings now done by `bitservices-core`. - [Rich Lees]
 
-* **NOTE**: Includes fixes and mitigation for:
+**NOTE**: Includes fixes and mitigation for:
 [https://archlinux.org/news/the-xz-package-has-been-backdoored/](https://archlinux.org/news/the-xz-package-has-been-backdoored/)
 
 <!----------------------------------------------------------------------------->
