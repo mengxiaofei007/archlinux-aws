@@ -1,0 +1,30 @@
+################################################################################
+# Archlinux Defaults: https://gitlab.archlinux.org/archlinux/packaging/packages/systemd/-/blob/main/systemd.install
+################################################################################
+
+enable getty@.service
+enable remote-fs.target
+enable systemd-userdbd.socket
+
+################################################################################
+# Custom for: archlinux64
+################################################################################
+
+enable cloud-config.service
+enable cloud-final.service
+enable cloud-init-local.service
+enable cloud-init-main.service
+enable cloud-init-network.service
+enable NetworkManager.service
+enable pretty-motd.service
+enable prometheus-node-exporter.service
+enable sshd.service
+enable systemd-timesyncd.service
+
+################################################################################
+# Disable everything else
+################################################################################
+
+disable *
+
+################################################################################

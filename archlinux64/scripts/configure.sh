@@ -106,6 +106,7 @@ cat <<NETWORKMANAGER > "/mnt/etc/NetworkManager/NetworkManager.conf"
   ipv6.ip6-privacy=2
 NETWORKMANAGER
 
+mkdir "/mnt/etc/systemd/system-preset"
 mkdir "/mnt/etc/systemd/timesyncd.conf.d"
 
 cp -fv "${CONFIGURE_FILES}/etc/cloud/cloud.cfg" "/mnt/etc/cloud/cloud.cfg"
@@ -113,6 +114,7 @@ cp -fv "${CONFIGURE_FILES}/etc/conf.d/pretty-motd" "/mnt/etc/conf.d/pretty-motd"
 cp -fv "${CONFIGURE_FILES}/etc/conf.d/prometheus-node-exporter" "/mnt/etc/conf.d/prometheus-node-exporter"
 cp -fv "${CONFIGURE_FILES}/etc/mkinitcpio.conf" "/mnt/etc/mkinitcpio.conf"
 cp -fv "${CONFIGURE_FILES}/etc/mkinitcpio.d/linux.preset" "/mnt/etc/mkinitcpio.d/linux.preset"
+cp -fv "${CONFIGURE_FILES}/etc/systemd/system-preset/50-archlinux64.preset" "/mnt/etc/systemd/system-preset/50-archlinux64.preset"
 cp -fv "${CONFIGURE_FILES}/etc/systemd/timesyncd.conf.d/ntp-ec2.conf" "/mnt/etc/systemd/timesyncd.conf.d/ntp-ec2.conf"
 cp -fv "${CONFIGURE_FILES}/etc/udev/rules.d/70-ec2-nvme-devices.rules" "/mnt/etc/udev/rules.d/70-ec2-nvme-devices.rules"
 cp -fv "${CONFIGURE_FILES}/usr/local/bin/ec2nvme-nsid" "/mnt/usr/local/bin/ec2nvme-nsid"
@@ -128,23 +130,6 @@ echo "- Generating locale...                                                  -"
 echo "-------------------------------------------------------------------------"
 
 arch-chroot "/mnt" locale-gen
-
-################################################################################
-
-echo "-------------------------------------------------------------------------"
-echo "- Enabling services...                                                  -"
-echo "-------------------------------------------------------------------------"
-
-arch-chroot "/mnt" systemctl enable "cloud-config.service"
-arch-chroot "/mnt" systemctl enable "cloud-final.service"
-arch-chroot "/mnt" systemctl enable "cloud-init-local.service"
-arch-chroot "/mnt" systemctl enable "cloud-init-main.service"
-arch-chroot "/mnt" systemctl enable "cloud-init-network.service"
-arch-chroot "/mnt" systemctl enable "NetworkManager.service"
-arch-chroot "/mnt" systemctl enable "pretty-motd.service"
-arch-chroot "/mnt" systemctl enable "prometheus-node-exporter.service"
-arch-chroot "/mnt" systemctl enable "sshd.service"
-arch-chroot "/mnt" systemctl enable "systemd-timesyncd.service"
 
 ################################################################################
 

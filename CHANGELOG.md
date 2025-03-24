@@ -24,6 +24,7 @@
 * **Change**: Use **mdev** instead of **partprobe** to update kernel devices after partitioning. - [Rich Lees]
 * **Change**: Use `systemd-boot` bootloader instead of `grub`. - [Rich Lees]
 * **Change**: Configure `systemd-boot` with: **Editor** `disabled`, **Auto Entries** `disabled` and **Default** as `linux.conf`. - [Rich Lees]
+* **Change**: Use a systemd preset to set the initial service state. - [Rich Lees]
 * **Remove**: **Vagrant box is no longer provided!** - [Rich Lees]
 * **Remove**: No longer manage parallel downloads and use the Archlinux default. - [Rich Lees]
 * **Remove**: Remove **NoCloud** data source for `cloud-init`. - [Rich Lees]
@@ -35,7 +36,6 @@
 * **Remove**: Remove the `grub` package. - [Rich Lees]
 * **Remove**: Remove the `vim` package. - [Rich Lees]
 * **Remove**: Remove the **kms** hook in `mkinitcpio.conf` to dramatically lower initial ramdisk size (cannot boot on nano instances otherwise). - [Rich Lees]
-* **Remove**: Disable the network activation feature of `cloud-init` since it is breaking things. - [Rich Lees]
 
 **NOTE**: The build system is completely different - images are now created by
 booting an Alpine Linux EC2 instance and installing the Archlinux installation
