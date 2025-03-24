@@ -34,10 +34,8 @@
 * **Remove**: Remove systemd network overrides (device naming and MAC address policy) that no longer seem to do anything. - [Rich Lees]
 * **Remove**: Remove the `grub` package. - [Rich Lees]
 * **Remove**: Remove the `vim` package. - [Rich Lees]
-* **Remove**: Remove the 'kms' hook in `mkinitcpio.conf` to dramatically lower initial ramdisk size (cannot boot on nano instances otherwise). - [Rich Lees]
-* **Remove**: Disable `systemd-networkd.socket` as it should never have been enabled anyway. - [Rich Lees]
-* **Remove**: Disable `systemd-networkd.service` as it should never have been enabled anyway. - [Rich Lees]
-* **Remove**: Disable `systemd-resolved.service` as it should never have been enabled anyway. - [Rich Lees]
+* **Remove**: Remove the **kms** hook in `mkinitcpio.conf` to dramatically lower initial ramdisk size (cannot boot on nano instances otherwise). - [Rich Lees]
+* **Remove**: Disable the network activation feature of `cloud-init` since it is breaking things. - [Rich Lees]
 
 **NOTE**: The build system is completely different - images are now created by
 booting an Alpine Linux EC2 instance and installing the Archlinux installation
@@ -192,7 +190,7 @@ For initial builder configuration, please see [README.md](README.md).
 * **Archlinux Boot ISO Used**: archlinux-2023.06.01-dual.iso
 * **Add**: Add `aws-cli-v2` package. - [Rich Lees]
 * **Add**: Add **reflector** pacman hook to refresh mirror lists automatically. - [Rich Lees]
-* **Add**: Retain the 'kms' hook in `mkinitcpio.conf` since GPU instances might need it. - [Rich Lees]
+* **Add**: Retain the **kms** hook in `mkinitcpio.conf` since GPU instances might need it. - [Rich Lees]
 * **Change**: Use `bitservices-core` package to manage some previously manually managed settings. - [Rich Lees]
 * **Change**: Put EC2 NTP configuration into `timesyncd.conf.d` folder. No tangible change. - [Rich Lees]
 * **Change**: Refresh `linux.preset` file for **mkinitcpio**. No tangible change. - [Rich Lees]

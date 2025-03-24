@@ -146,10 +146,6 @@ arch-chroot "/mnt" systemctl enable "prometheus-node-exporter.service"
 arch-chroot "/mnt" systemctl enable "sshd.service"
 arch-chroot "/mnt" systemctl enable "systemd-timesyncd.service"
 
-arch-chroot "/mnt" systemctl disable "systemd-networkd.socket"
-arch-chroot "/mnt" systemctl disable "systemd-networkd.service"
-arch-chroot "/mnt" systemctl disable "systemd-resolved.service"
-
 ################################################################################
 
 echo "-------------------------------------------------------------------------"

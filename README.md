@@ -212,7 +212,9 @@ key:
         * **Final**: `ssh-authkey-fingerprints`
         * **Final**: `keys-to-console`
         * **Final**: `final-message`
-    * **Networking**: Management by cloud-init disabled
+    * **Networking**:
+        * Activation by cloud-init disabled
+        * Management by cloud-init disabled
     * **Datasources**:
         * Ec2
         * None
