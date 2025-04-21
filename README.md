@@ -136,7 +136,6 @@ key:
         * linux-firmware
         * linux-headers
         * logrotate
-        * mdadm
         * neovim
         * net-tools
         * networkmanager
@@ -155,10 +154,8 @@ key:
 * **Logrotate**: Enable `compress`
 * **Ramdisk**:
     * Disable fallback ramdisk
-    * Include `mdmon` binary
-    * Include `/etc/os-release` file
+    * Include `btrfs` module (btrfs only)
     * Include `systemd` hook after `base`
-    * Include `mdadm_udev` hook after `block`
     * Include `sd-vconsole` hook after `keyboard`
     * Remove `udev` hook
     * Remove `autodetect` hook
@@ -166,6 +163,7 @@ key:
     * Remove `kms` hook
     * Remove `keymap` hook
     * Remove `consolefont` hook
+    * Remove `filesystems` hook
 * **Device Manager**
     * **EC2 Only Device Manager Changes**:
         * Include Amazon EBS friendly name rules for NVMe disks

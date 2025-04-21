@@ -15,6 +15,7 @@ echo "-------------------------------------------------------------------------"
 hash cp
 hash cat
 hash sed
+hash eval
 hash genfstab
 hash arch-chroot
 
@@ -125,6 +126,17 @@ chmod 755 "/mnt/usr/local/bin/ebsnvme-id"
 
 ################################################################################
 
+CONFIGURE_TYPE="$(cat "${CONFIGURE_SHARED}/filesystem-type")"
+
+if [ "${CONFIGURE_TYPE}" == "btrfs" ]; then
+  echo "Adding BTRFS module..."
+  eval "$(cat "/mnt/etc/mkinitcpio.conf" | grep "^MODULES=")"
+  MODULES+=(btrfs)
+  sed -i "s/^MODULES=(.*)$/MODULES=(${MODULES[*]})/g" "/mnt/etc/mkinitcpio.conf"
+fi
+
+################################################################################
+
 echo "-------------------------------------------------------------------------"
 echo "- Generating locale...                                                  -"
 echo "-------------------------------------------------------------------------"
@@ -145,12 +157,11 @@ echo "-------------------------------------------------------------------------"
 echo "- Installing bootloader...                                              -"
 echo "-------------------------------------------------------------------------"
 
-CONFIGURE_LOADER_TYPE="$(cat "${CONFIGURE_SHARED}/filesystem-type")"
 CONFIGURE_LOADER_ROOT_FLAGS="$(cat "${CONFIGURE_SHARED}/filesystem-root-flags")"
 CONFIGURE_LOADER_ROOT_DEVICE="$(cat "${CONFIGURE_SHARED}/filesystem-root-device")"
 CONFIGURE_LOADER_ROOT_BTRFS_VOLUME="$(cat "${CONFIGURE_SHARED}/filesystem-root-btrfs-subvolume-root")"
 
-if [ "${CONFIGURE_LOADER_TYPE}" == "btrfs" ]; then
+if [ "${CONFIGURE_TYPE}" == "btrfs" ]; then
   CONFIGURE_LOADER_ROOT_FLAGS="${CONFIGURE_LOADER_ROOT_FLAGS},subvol=${CONFIGURE_LOADER_ROOT_BTRFS_VOLUME}"
 fi
 

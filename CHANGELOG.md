@@ -1,5 +1,16 @@
 <!----------------------------------------------------------------------------->
 
+### **3.0.1**
+* **Archlinux Package Level**: 21 April 2025
+* **Add**: Add **btrfs** module in `mkinitcpio.conf` when BTRFS is the selected file system. - [Rich Lees]
+* **Remove**: Remove the `mdadm` package. - [Rich Lees]
+* **Remove**: Remove the **mdmon** binary in `mkinitcpio.conf`. - [Rich Lees]
+* **Remove**: Remove the **mdadm_udev** hook in `mkinitcpio.conf`. - [Rich Lees]
+* **Remove**: Remove the **filesystems** hook in `mkinitcpio.conf`. - [Rich Lees]
+* **Remove**: Remove the **/etc/os-release** file in `mkinitcpio.conf` since its no longer required. - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.0.0**
 * **Archlinux Package Level**: 24 March 2025
 * **Add**: A FAT32 **EFI** partition (**EF00**) with label **ARCH_BOOT** that is **512 MB** and mounted at `/boot/`. - [Rich Lees]

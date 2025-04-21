@@ -104,7 +104,6 @@ pacstrap -c -M -P "/mnt"   \
   linux-firmware           \
   linux-headers            \
   logrotate                \
-  mdadm                    \
   neovim                   \
   net-tools                \
   networkmanager           \
