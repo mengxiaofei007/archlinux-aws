@@ -3,6 +3,7 @@
 ### **3.0.2**
 * **Archlinux Package Level**: 9 June 2025
 * **Change**: Update pacman initial mirrorlist (version: 2025-05-22). - [Rich Lees]
+* **Bugfix**: Fix permissions of pacman configuration files. - [Rich Lees]
 
 <!----------------------------------------------------------------------------->
 
