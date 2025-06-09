@@ -15,6 +15,7 @@ echo "-------------------------------------------------------------------------"
 hash cp
 hash cat
 hash sync
+hash chmod
 hash mkdir
 hash pidof
 hash pacman
@@ -60,9 +61,13 @@ echo "- Configuring pacman...                                                 -"
 echo "-------------------------------------------------------------------------"
 
 mkdir "/etc/pacman.d"
+chmod 755 "/etc/pacman.d"
 
 cp -fv "${INSTALL_FILES}/etc/pacman.d/mirrorlist" "/etc/pacman.d/mirrorlist"
 cp -fv "${INSTALL_FILES}/etc/pacman.conf" "/etc/pacman.conf"
+
+chmod 644 "/etc/pacman.d/mirrorlist"
+chmod 644 "/etc/pacman.conf"
 
 ################################################################################
 
