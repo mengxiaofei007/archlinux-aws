@@ -1,5 +1,11 @@
 <!----------------------------------------------------------------------------->
 
+### **3.0.2**
+* **Archlinux Package Level**: 9 June 2025
+* **Change**: Update pacman initial mirrorlist (version: 2025-05-22). - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.0.1**
 * **Archlinux Package Level**: 21 April 2025
 * **Add**: Add **btrfs** module in `mkinitcpio.conf` when BTRFS is the selected file system. - [Rich Lees]
