@@ -102,7 +102,7 @@ pacstrap -c -M -P "/mnt"   \
   f2fs-tools               \
   inetutils                \
   linux                    \
-  linux-firmware           \
+  linux-firmware-other     \
   linux-headers            \
   logrotate                \
   neovim                   \

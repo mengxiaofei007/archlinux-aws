@@ -2,7 +2,8 @@
 
 ### **3.0.4**
 * **Archlinux Package Level**: 25 June 2025
-* **Remove**: Prevent the following packages from being installed: `linux-firmware-amdgpu` `linux-firmware-atheros` `linux-firmware-broadcom` `linux-firmware-cirrus` `linux-firmware-intel` `linux-firmware-mediatek` `linux-firmware-nvidia` `linux-firmware-radeon` and `linux-firmware-realtek`. - [Rich Lees]
+* **Add**: Add the `linux-firmware-other` package. - [Rich Lees]
+* **Remove**: Remove the `linux-firmware` package. - [Rich Lees]
 
 <!----------------------------------------------------------------------------->
 

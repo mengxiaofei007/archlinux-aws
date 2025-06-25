@@ -133,7 +133,7 @@ key:
         * f2fs-tools
         * inetutils
         * linux
-        * linux-firmware
+        * linux-firmware-other
         * linux-headers
         * logrotate
         * neovim
@@ -145,16 +145,6 @@ key:
         * prometheus-node-exporter
         * python
         * sudo
-    * **Ignored Packages**:
-        * linux-firmware-amdgpu
-        * linux-firmware-atheros
-        * linux-firmware-broadcom
-        * linux-firmware-cirrus
-        * linux-firmware-intel
-        * linux-firmware-mediatek
-        * linux-firmware-nvidia
-        * linux-firmware-radeon
-        * linux-firmware-realtek
     * **Cache**: Cleared before image capture
 * **FSTAB**: Generated using `genfstab` using UUIDs
 * **Hostname**: archlinux
