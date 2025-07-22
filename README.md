@@ -252,16 +252,12 @@ key:
         * filesystem
         * hwmon
         * loadavg
-        * mdadm
         * meminfo
         * netclass
         * netdev
         * netstat
-        * nfs
         * nvme
-        * pressure
         * stat
-        * thermal_zone
         * udp_queues
 
 --------------------------------------------------------------------------------

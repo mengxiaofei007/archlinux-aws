@@ -1,5 +1,14 @@
 <!----------------------------------------------------------------------------->
 
+* **Archlinux Package Level**: 22 July 2025
+* **Change**: Update pacman initial mirrorlist (version: 2025-07-02). - [Rich Lees]
+* **Remove**: Disable `mdadm` collector for **Node Exporter**. - [Rich Lees]
+* **Remove**: Disable `nfs` collector for **Node Exporter**. - [Rich Lees]
+* **Remove**: Disable `pressure` collector for **Node Exporter**. - [Rich Lees]
+* **Remove**: Disable `thermal_zone` collector for **Node Exporter**. - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.0.4**
 * **Archlinux Package Level**: 25 June 2025
 * **Add**: Add the `linux-firmware-other` package. - [Rich Lees]
