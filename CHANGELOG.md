@@ -1,5 +1,6 @@
 <!----------------------------------------------------------------------------->
 
+### **3.0.5**
 * **Archlinux Package Level**: 22 July 2025
 * **Change**: Update pacman initial mirrorlist (version: 2025-07-02). - [Rich Lees]
 * **Remove**: Disable `mdadm` collector for **Node Exporter**. - [Rich Lees]
