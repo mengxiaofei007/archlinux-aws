@@ -1,5 +1,11 @@
 <!----------------------------------------------------------------------------->
 
+### **3.0.9**
+* **Archlinux Package Level**: 11 November 2025
+* **Change**: Update pacman initial mirrorlist (version: 2025-10-21). - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.0.8**
 * **Archlinux Package Level**: 8 September 2025
 
