@@ -1,5 +1,11 @@
 <!----------------------------------------------------------------------------->
 
+### **Unreleased**
+* **Archlinux Package Level**: TBC
+* **Change**: Use `aws-cli-v2` package instead since it is now available again instead of `aws-cli-v2-bits`. - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.0.9**
 * **Archlinux Package Level**: 11 November 2025
 * **Change**: Update pacman initial mirrorlist (version: 2025-10-21). - [Rich Lees]

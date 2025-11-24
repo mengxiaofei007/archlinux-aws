@@ -123,7 +123,7 @@ key:
         * bitservices (custom, signed)
     * **Mirrors**: Standard Archlinux mirrorlist with only **https** enabled **Worldwide** servers enabled
     * **Base Packages**: (In addition to `base`)
-        * aws-cli-v2-bits (bitservices)
+        * aws-cli-v2
         * bitservices-core (bitservices)
         * btrfs-progs
         * cloud-guest-utils

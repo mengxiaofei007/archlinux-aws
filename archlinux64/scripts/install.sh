@@ -91,7 +91,7 @@ echo "- Installing...                                                         -"
 echo "-------------------------------------------------------------------------"
 
 pacstrap -c -M -P "/mnt"   \
-  aws-cli-v2-bits          \
+  aws-cli-v2               \
   base                     \
   bitservices-core         \
   btrfs-progs              \
