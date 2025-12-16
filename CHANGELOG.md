@@ -3,6 +3,8 @@
 ### **Unreleased**
 * **Archlinux Package Level**: TBC
 * **Change**: Use `aws-cli-v2` package instead since it is now available again instead of `aws-cli-v2-bits`. - [Rich Lees]
+* **Change**: Update `pacman.conf` (only comments affected). - [Rich Lees]
+* **Change**: Update pacman GPG key for the **bitservices** repository. - [Rich Lees]
 
 <!----------------------------------------------------------------------------->
 

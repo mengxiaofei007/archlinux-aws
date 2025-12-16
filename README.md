@@ -115,7 +115,7 @@ key:
     * **Pacman Options**:
         * Enabled `Color`
     * **Keys**:
-        * Added `7FC5C97F4044C19A` (bitservices-packages.asc)
+        * Added `B5973EDFB21CD20B` (bitservices-packages.asc)
         * Removed master 'lsign' key
     * **Repositories**:
         * core
@@ -273,7 +273,7 @@ key:
         * Disabled `CheckSpace`
         * Disabled `DownloadUser`
     * **Keys**:
-        * Added `7FC5C97F4044C19A` (bitservices-packages.asc)
+        * Added `B5973EDFB21CD20B` (bitservices-packages.asc)
     * **Repositories**:
         * core
         * extra
