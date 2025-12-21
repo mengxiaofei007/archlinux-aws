@@ -2,6 +2,7 @@
 
 ### **3.1.0**
 * **Archlinux Package Level**: 21 December 2025
+* **Change**: Use **ED25519** temporary key for the builder instance. - [Rich Lees]
 * **Change**: Update `pacman.conf` (only comments affected). - [Rich Lees]
 * **Change**: Update pacman GPG key for the **bitservices** repository. - [Rich Lees]
 * **Change**: **Logrotate** setting for **compress** now managed by package instead. - [Rich Lees]

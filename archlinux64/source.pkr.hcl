@@ -11,6 +11,7 @@ variable "source_instance_type" { default = "m7a.medium" }
 ################################################################################
 
 variable "source_ssh_timeout"   { default = "3m"         }
+variable "source_ssh_key_type"  { default = "ed25519"    }
 variable "source_ssh_username"  { default = "alpine"     }
 variable "source_ssh_interface" { default = "public_dns" }
 
@@ -39,6 +40,7 @@ source "amazon-ebssurrogate" "object" {
   force_deregister        = var.overwrite
   force_delete_snapshot   = var.overwrite
   ami_virtualization_type = var.virtualisation
+  temporary_key_pair_type = var.source_ssh_key_type
 
   ami_root_device {
     device_name           = var.storage_name
