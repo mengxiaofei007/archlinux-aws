@@ -90,30 +90,12 @@ echo "-------------------------------------------------------------------------"
 echo "- Installing...                                                         -"
 echo "-------------------------------------------------------------------------"
 
-pacstrap -c -M -P "/mnt"   \
-  aws-cli-v2               \
-  base                     \
-  bitservices-core         \
-  btrfs-progs              \
-  cloud-guest-utils        \
-  cloud-init               \
-  dosfstools               \
-  e2fsprogs                \
-  f2fs-tools               \
-  inetutils                \
-  linux                    \
-  linux-firmware-other     \
-  linux-headers            \
-  logrotate                \
-  neovim                   \
-  net-tools                \
-  networkmanager           \
-  openssh                  \
-  pacman-contrib           \
-  pretty-motd              \
-  prometheus-node-exporter \
-  python                   \
-  sudo
+pacstrap -c -M -P "/mnt"     \
+  bitservices-packages-cloud \
+  linux                      \
+  linux-firmware-other       \
+  linux-headers              \
+  networkmanager
 
 sync
 

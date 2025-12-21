@@ -122,36 +122,18 @@ key:
         * extra
         * bitservices (custom, signed)
     * **Mirrors**: Standard Archlinux mirrorlist with only **https** enabled **Worldwide** servers enabled
-    * **Base Packages**: (In addition to `base`)
-        * aws-cli-v2
-        * bitservices-core (bitservices)
-        * btrfs-progs
-        * cloud-guest-utils
-        * cloud-init
-        * dosfstools
-        * e2fsprogs
-        * f2fs-tools
-        * inetutils
+    * **Base Packages**:
+        * [bitservices-packages-cloud]
         * linux
         * linux-firmware-other
         * linux-headers
-        * logrotate
-        * neovim
-        * net-tools
         * networkmanager
-        * openssh
-        * pacman-contrib
-        * pretty-motd (bitservices)
-        * prometheus-node-exporter
-        * python
-        * sudo
     * **Cache**: Cleared before image capture
 * **FSTAB**: Generated using `genfstab` using UUIDs
 * **Hostname**: archlinux
 * **Locale**:
     * **Language**: `en_GB.UTF-8`
     * **Keymap**: `uk`
-* **Logrotate**: Enable `compress`
 * **Ramdisk**:
     * Disable fallback ramdisk
     * Include `btrfs` module (btrfs only)
@@ -343,7 +325,8 @@ AMI images have their IDs printed to **stdout**.
 
 --------------------------------------------------------------------------------
 
-[Archlinux]:           https://archlinux.org/
-[Amazon EC2]:          https://aws.amazon.com/ec2/
-[Alpine Linux]:        https://alpinelinux.org/
-[Amazon Web Services]: https://aws.amazon.com/
+[Archlinux]:                  https://archlinux.org/
+[Amazon EC2]:                 https://aws.amazon.com/ec2/
+[Alpine Linux]:               https://alpinelinux.org/
+[Amazon Web Services]:        https://aws.amazon.com/
+[bitservices-packages-cloud]: https://gitlab.com/bitservices/archlinux/bitservices-packages

@@ -1,10 +1,29 @@
 <!----------------------------------------------------------------------------->
 
-### **Unreleased**
-* **Archlinux Package Level**: TBC
-* **Change**: Use `aws-cli-v2` package instead since it is now available again instead of `aws-cli-v2-bits`. - [Rich Lees]
+### **3.1.0**
+* **Archlinux Package Level**: 21 December 2025
 * **Change**: Update `pacman.conf` (only comments affected). - [Rich Lees]
 * **Change**: Update pacman GPG key for the **bitservices** repository. - [Rich Lees]
+* **Change**: **Logrotate** setting for **compress** now managed by package instead. - [Rich Lees]
+* **Change**: Package: `aws-cli-v2` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `base` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `bitservices-core` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `btrfs-progs` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `cloud-guest-utils` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `cloud-init` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `dosfstools` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `e2fsprogs` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `f2fs-tools` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `inetutils` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `logrotate` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `neovim` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `net-tools` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `openssh` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `pacman-contrib` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `pretty-motd` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `prometheus-node-exporter` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `python` is no longer explicitly installed. - [Rich Lees]
+* **Change**: Package: `sudo` is no longer explicitly installed. - [Rich Lees]
 
 <!----------------------------------------------------------------------------->
 
