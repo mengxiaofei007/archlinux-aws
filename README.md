@@ -127,7 +127,6 @@ key:
         * linux
         * linux-firmware-other
         * linux-headers
-        * networkmanager
     * **Cache**: Cleared before image capture
 * **FSTAB**: Generated using `genfstab` using UUIDs
 * **Hostname**: archlinux

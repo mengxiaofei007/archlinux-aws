@@ -1,5 +1,11 @@
 <!----------------------------------------------------------------------------->
 
+### **3.1.1**
+* **Archlinux Package Level**: 28 December 2025
+* **Change**: Package: `networkmanager` is no longer explicitly installed. - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.1.0**
 * **Archlinux Package Level**: 21 December 2025
 * **Change**: Use **ED25519** temporary key for the builder instance. - [Rich Lees]

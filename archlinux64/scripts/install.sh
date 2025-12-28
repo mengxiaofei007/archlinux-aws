@@ -95,8 +95,7 @@ pacstrap -c -M -P "/mnt"     \
   iptables-nft               \
   linux                      \
   linux-firmware-other       \
-  linux-headers              \
-  networkmanager
+  linux-headers
 
 chmod 644 "/mnt/etc/pacman.conf" # Currently a bug in pacstrap.
 
