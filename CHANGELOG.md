@@ -1,5 +1,11 @@
 <!----------------------------------------------------------------------------->
 
+### **3.1.2**
+* **Archlinux Package Level**: 25 January 2026
+* **Change**: Update pacman initial mirrorlist (version: 2026-01-05). - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.1.1**
 * **Archlinux Package Level**: 28 December 2025
 * **Change**: Package: `networkmanager` is no longer explicitly installed. - [Rich Lees]
