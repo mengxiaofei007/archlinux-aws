@@ -3,6 +3,7 @@
 ### **3.1.2**
 * **Archlinux Package Level**: 25 January 2026
 * **Change**: Update pacman initial mirrorlist (version: 2026-01-05). - [Rich Lees]
+* **Change**: Update initial trusted Archlinux key for keyring initialisation. - [Rich Lees]
 
 <!----------------------------------------------------------------------------->
 
