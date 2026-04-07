@@ -28,6 +28,7 @@ apk add --no-cache     \
   dosfstools           \
   e2fsprogs            \
   e2fsprogs-extra      \
+  findmnt              \
   sgdisk
 
 ###############################################################################

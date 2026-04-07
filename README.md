@@ -267,6 +267,7 @@ key:
         * dosfstools
         * e2fsprogs
         * e2fsprogs-extra
+        * findmnt
         * sgdisk
 * **Kernel**
     * **Ensured Modules**:
