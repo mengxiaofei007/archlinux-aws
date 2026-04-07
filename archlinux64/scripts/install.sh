@@ -92,15 +92,11 @@ echo "-------------------------------------------------------------------------"
 
 pacstrap -c -M -P "/mnt"     \
   bitservices-packages-cloud \
-  iptables-nft               \
   linux                      \
   linux-firmware-other       \
   linux-headers
 
 chmod 644 "/mnt/etc/pacman.conf" # Currently a bug in pacstrap.
-
-arch-chroot "/mnt" pacman -D --asdeps \
-  iptables-nft
 
 sync
 
