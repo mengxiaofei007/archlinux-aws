@@ -1,5 +1,11 @@
 <!----------------------------------------------------------------------------->
 
+### **3.1.5**
+* **Archlinux Package Level**: 28 April 2026
+* **Change**: Update pacman initial mirrorlist (version: 2026-04-06). - [Rich Lees]
+
+<!----------------------------------------------------------------------------->
+
 ### **3.1.4**
 * **Archlinux Package Level**: 7 April 2026
 * **Remove**: Remove explicit installation of `iptables-nft` as it is now default. - [Rich Lees]
